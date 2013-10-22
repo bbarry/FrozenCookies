@@ -15,8 +15,8 @@ function fcInit() {
     'http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js',
     'http://underscorejs.org/underscore-min.js',
     'https://raw.github.com/caleb531/jcanvas/master/jcanvas.js',
-    'https://raw.github.com/Icehawk78/FrozenCookies/master/cc_upgrade_prerequisites.js',
-    'https://raw.github.com/Icehawk78/FrozenCookies/master/fc_button.js'
+    'https://raw.github.com/bbarry/FrozenCookies/master/cc_upgrade_prerequisites.js',
+    'https://raw.github.com/bbarry/FrozenCookies/master/fc_button.js'
   ]
   var done = 0;
   var jquery = document.createElement('script');
@@ -45,7 +45,7 @@ function fcInit() {
     {'simulatedGCPercent' : ["GC for Calculations: 0%","GC for Calculations: Actual Ratio","GC for Calculations: 100%"]},
     {'numberDisplay' : ["Raw Numbers","Full Word (million, billion)","Initials (M, B)","SI Units (M, G, T)", "Scientific Notation (x10¹²)"]}
   ];
-  FrozenCookies.numberDisplay = preferenceParse('numberDisplay', 1);
+  FrozenCookies.numberDisplay = preferenceParse('numberDisplay', 2);
   FrozenCookies.autoBuy = preferenceParse('autoBuy', 0);
   FrozenCookies.autoGC = preferenceParse('autoGC', 0);
   FrozenCookies.simulatedGCPercent = preferenceParse('simulatedGCPercent', 1);
